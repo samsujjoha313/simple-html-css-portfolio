@@ -1,0 +1,590 @@
+/* .city:hover{
+    text-decoration: underline;
+} */
+
+/* *{
+    box-sizing: border-box;
+}
+
+.skill-container{
+    background-color: gray;
+    width: 500px;
+    padding:20px;
+}
+
+.skill-container li{
+    list-style: none;
+    margin:50px 0px;
+    font-weight: bolder;
+    position: relative;
+   
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(170,167,170);
+    width: 100%;
+    height: 15px;
+    top:20px;
+    left:0px;
+   border-radius: 1000px;
+}
+
+.skill-container li::after{
+    content:'';
+    position: absolute;
+    background-color: rgb(249,249,250);
+    width: 0;
+    height: 15px;
+    top:20px;
+    left:0px;
+    border-radius: 1000px;
+
+
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-delay: 0s;
+   animation-fill-mode: forwards;
+}
+
+.skill-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: orange;
+    }
+}
+
+
+.skill-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+        background-color: red;
+    }
+}
+
+.skill-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 60%;
+        background-color: yellow;
+    }
+}
+
+.skill-container li.boots::after{
+    animation-name: boots;
+        
+}
+
+@keyframes boots{
+    to{
+        width: 70%;
+        background-color: blue;
+    }
+}
+
+.skill-container li.react::after{
+    animation-name: react;
+        
+}
+
+@keyframes react{
+    to{
+        width: 70%;
+        background-color: green;
+    }
+} */
+
+
+/* *{
+    box-sizing: border-box;
+}
+
+.skill-container{
+   
+    background-color: gray;
+    width: 400px;
+    
+    padding:20px;
+}
+
+.skill-container li{
+    position: relative;
+    text-transform: uppercase;
+    list-style: none;
+    margin:50px 0px;
+
+}
+
+.skill-container li::before{
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: rgb(170,169,173);
+    position: absolute;
+    top:20px;
+    left:0px;
+    border-radius: 1000px;
+}
+
+.skill-container li::after{
+    content: '';
+    width: 0%;
+    height: 15px;
+    background-color: rgb(249,249,250);
+    position: absolute;
+    top:20px;
+    left:0px;
+    border-radius: 1000px;
+
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+
+.skill-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: pink;
+    }
+}
+
+
+
+.skill-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 85%;
+        background-color: brown;
+    }
+}
+
+
+
+.skill-container li.boots::after{
+    animation-name: boots;
+}
+
+@keyframes boots{
+    to{
+        width: 80%;
+        background-color: powderblue;
+    }
+}
+
+
+
+
+.skill-container li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 60%;
+        background-color: green;
+    }
+}
+
+
+
+
+.skill-container li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 50%;
+        background-color: pink;
+    }
+} */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header-area{
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    justify-content: space-between;
+}
+.text h1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color:rgb(235, 228, 228);
+    padding:12px;
+    text-decoration: underline;
+}
+.nav-menu{
+   
+    text-align: right;
+}
+
+.nav-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color:white;
+}
+.nav-menu ul li{
+    margin:10px;
+    padding:5px;
+    width: 120px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+.nav-menu ul li:hover{
+    background-color: rgb(0,100,0);
+    border-radius: 5%;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.nav-menu ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(123,230,123);
+    top:30px;
+    right:-20px;
+    
+
+}
+.nav-menu ul li:hover .sub-menu ul{
+    display: block;
+    
+}
+.nav-menu ul li:hover .sub-menu ul li{
+    margin:10px;
+    padding:10px;
+    width: 150px;
+    text-align: left;
+}
+.nav-menu ul li:hover .sub-menu ul li a{
+   
+    color:white;
+}
+
+.sub-menu1{
+    display: none;
+}
+
+.nav-menu ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color: rgb(123,230,123);
+    text-align: left;
+    top:30px;
+    left:-2px;
+    
+}
+.nav-menu ul li:hover .sub-menu1 ul{
+    display: block;
+}
+
+.nav-menu ul li:hover .sub-menu1 ul li{
+    margin:10px;
+    padding:10px;
+    width: 120px;
+}
+
+.nav-menu ul li:hover .sub-menu1 ul li a{
+    color:white;
+}
+
+.sub-menu2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    background-color: rgb(123,230,123);
+    left:125px;
+}
+.hover-me:hover .sub-menu2 ul{
+    display: block;
+}
+.hover-me:hover .sub-menu2 ul li{
+    margin:10px;
+    padding:10px;
+    width: 120px;
+}
+
+.main1{
+    display: flex;
+   
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    
+
+}
+.title h1::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background-color: red;
+    left:415px;
+    top:106px;
+    
+
+}
+.title h1::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background-color: red;
+    top:106px;
+   
+    
+
+}
+
+.pera p{
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.link a{
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: 490px;
+    font-size: 25px;
+    text-decoration: none;
+    color: green;
+
+}
+
+.link i{
+    font-size: 20px;
+    color: green;
+}
+
+.demo1 h1{
+    color:rgb(20, 145, 20);
+    font-family: sans-serif;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.city1{
+    width: 800px;
+    height: 420px;
+    background-color: pink;
+    margin-left: 80px;
+    
+}
+
+.city1 ul{
+    display: block;
+    list-style: none;
+}
+
+.city1 ul li{
+    margin:50px 0px;
+    padding:1px;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+.city1 ul li a{
+    text-decoration: none;
+}
+
+.city1 li::before{
+    content: '';
+    width: 490px;
+    height: 12px;
+    background-color: rgb(151, 148, 160);
+    position: absolute;
+    top:25px;
+    left:0px;
+    border-radius: 1000px;
+}
+
+.city1 li::after{
+    content: '';
+    width: 0px;
+    height: 12px;
+    background-color: rgb(249,249,250);
+    position: absolute;
+    top:25px;
+    left:0px;
+    border-radius: 1000px;
+
+
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+
+
+.city1 li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 600%;
+        background-color: rgb(117, 189, 24);
+    }
+}
+
+
+.city1 li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 500%;
+        background-color: rgb(117, 189, 24);
+    }
+}
+
+.city1 li.boots::after{
+    animation-name: boots;
+}
+
+@keyframes boots{
+    to{
+        width: 400%;
+        background-color: rgb(117, 189, 24);
+    }
+}
+
+.city1 li.js::after{
+    animation-name: js;
+}
+
+@keyframes js{
+    to{
+        width: 300%;
+        background-color: rgb(117, 189, 24);
+    }
+}
+
+.city1 li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 200%;
+        background-color: rgb(117, 189, 24);
+    }
+}
+.city1{
+    display: flex;
+    
+}
+.demo2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.city2{
+    margin-left: 400px;
+}
+
+.city2 img{
+    height: 420px;
+    margin-right: 200px;
+}
+
+.footer{
+  
+
+    width: auto;
+    height: 50px;
+    background-color: gray;
+}
+
+.iframe {
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding:17px;
+    margin:20px;
+    justify-content: space-evenly;
+   
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

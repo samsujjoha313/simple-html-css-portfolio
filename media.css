@@ -1,0 +1,153 @@
+@media screen and (max-width:600px){
+    .nav-menu ul li {
+        width: 100%;
+        margin-right: -5px;
+        font-size: 10px;
+        text-transform: uppercase;
+        position: relative;
+        padding-top: 17px;
+    }
+
+    .text h1 {
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color: rgb(235, 228, 228);
+        padding: 12px;
+        text-decoration: underline;
+        text-shadow: 1px 1px darkgreen;
+    }
+
+    .title h1::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 50px;
+        background-color: red;
+        left: 10px;
+        top: 106px;
+    }
+    .pera p {
+        display: inline-block;
+        margin-top: 10px;
+        text-align: left;
+        font-family: sans-serif;
+    }
+    .link a {
+        display: inline-block;
+        margin-top: 120px;
+        margin-left: 100px;
+        font-size: 20px;
+        text-decoration: none;
+        color: green;
+        position: relative;
+    }
+    #img1{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+.demo2{
+    display: flex;
+} 
+
+    .city1 {
+        width: 400px;
+        height: auto;
+        background-color: pink;
+        margin-left: 0px;
+        
+    }
+    .city1 li::before {
+        content: '';
+        width: 290px;
+        height: 12px;
+        background-color: rgb(151, 148, 160);
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        border-radius: 1000px;
+    }
+    .city1 li::after {
+        content: '';
+        width: 0px;
+        height: 12px;
+        background-color: rgb(151, 148, 160);
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        border-radius: 1000px;
+
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 3;
+    }
+
+
+    .city1 li.html::after{
+        animation-name: html;
+    }
+    
+    @keyframes html{
+        to{
+            width: 300%;
+            background-color: rgb(117, 189, 24);
+        }
+    }
+    
+    
+    .city1 li.css::after{
+        animation-name: css;
+    }
+    
+    @keyframes css{
+        to{
+            width: 280%;
+            background-color: rgb(117, 189, 24);
+        }
+    }
+    
+    .city1 li.boots::after{
+        animation-name: boots;
+    }
+    
+    @keyframes boots{
+        to{
+            width: 200%;
+            background-color: rgb(117, 189, 24);
+        }
+    }
+    
+    .city1 li.js::after{
+        animation-name: js;
+    }
+    
+    @keyframes js{
+        to{
+            width: 150%;
+            background-color: rgb(117, 189, 24);
+        }
+    }
+    
+    .city1 li.react::after{
+        animation-name: react;
+    }
+    
+    @keyframes react{
+        to{
+            width: 100%;
+            background-color: rgb(117, 189, 24);
+        }
+    }
+  
+
+    .city2 {
+     margin-left:210px;
+    }
+    .footer{
+
+    }
+}
